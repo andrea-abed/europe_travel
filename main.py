@@ -11,7 +11,7 @@ def home_route():
     return render_template("travel.html", projects=projects.setup())
 
 
-@app.route("/greece/")
+@app.route("/spain/")
 def greece_route():
     return "<h1 style='background-color:blue;color:white'>Greece!</h1>"
 
