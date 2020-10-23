@@ -19,6 +19,18 @@ def greece_route():
 def italy_route():
     return "<h1 style='background-color:blue;color:white'>Italy!</h1>"
 
+@app.route("/spain/")
+def italy_route():
+    return "<h1 style='background-color:blue;color:white'>Spain!</h1>"
+
+@app.route("/france/")
+def italy_route():
+    return "<h1 style='background-color:blue;color:white'>France!</h1>"
+
+@app.route("/germany/")
+def italy_route():
+    return "<h1 style='background-color:blue;color:white'>Germany!</h1>"
+
 if __name__ == "__main__":
     #runs the application on the repl development server
     app.run(debug=True)
