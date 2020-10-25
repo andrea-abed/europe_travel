@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home_route():
     return render_template("travel.html", projects=projects.setup())
 
-
+#adds the approutes so we can have seperate sites for each of the locations where we can include information about them
 @app.route("/greece/")
 def greece_route():
     return render_template("greece.html", projects=projects.setup())
