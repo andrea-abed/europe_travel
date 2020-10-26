@@ -1,7 +1,79 @@
 <!DOCTYPE html>
-<head>
+{% extends "base.html" %}
 
-<body>
-<h1>Greece</h1>
-</body>
-</head>
+{% block head %}
+<title>{{name}} | Athens </title>
+<style>
+ #myBG {
+ background-image: url('//lh3.googleusercontent.com/proxy/pwkXDyZMwnQDCyMgKMoTg6XH151Iz30yqTQQniYTewwAqr09B5EV34g07owji5MsfsEVlzrLYmGDmDd7VkDen70rKYsF39fjZt-3zjBl3N3a7K190948');
+ background-size: 100% 300px;
+ }
+ #box {
+ background-color: darkslategrey;
+  width: 392px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+ }
+  </style>
+{% endblock %}
+
+<!-- Project  Information  -->
+{% block title %}
+<div id="myBG">
+    <h1>Athens, Greece</h1>
+    <pre style="color:white;">Travel to Athens! The birthplace of Government!
+    </pre>
+</div>
+{% endblock %}
+
+{% block hotspot1 %}
+<div id="box">
+    <h2>Hot spots</h2>
+    <hr>
+    <h3>Parthenon</h3>
+    <img src="https://lp-cms-production.imgix.net/2019-09/ab57ac3775d90a72da514d158401bd47-parthenon.jpg" alt="Parthenon" style="width:300px;height:200px;">
+    <pre style="color:white;">
+    The Parthenon is a one of the
+    most famous historical sites
+    is one of the greatest creations
+    by the Greek democracy in
+    490 BC but was destoried in
+    480 BC by the Persian so only
+    the remains are left.
+    </pre>
+</div>
+{% endblock %}
+{% block hotspot2 %}
+<div id="box">
+    <hr>
+    <hr>
+    <hr>
+    <h3>Acropolis of Athens</h3>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-mjgMW42lIQmNXCLIaq--p7_LMPUPl3dSog&usqp=CAU" alt="Acropolis of Athens" style="width:300px;height:203px;">
+    <pre style="color:white;">
+        The Acropolis of Athens
+        is one of the most famous
+        ancient archaeological sites
+        in the world. Located on a
+        limestone hill high above Athens,
+        Greece, the Acropolis has been
+        inhabited since prehistoric times.
+    </pre>
+</div>
+{% endblock %}
+{% block hotspot3 %}
+<div id="box">
+    <hr>
+    <hr>
+    <hr>
+    <h3>Syntagma Square</h3>
+    <img src="https://media.istockphoto.com/photos/the-hellenic-parliament-building-picture-id859838942?k=6&m=859838942&s=612x612&w=0&h=9fowhC6fobno_q0hLKMZFKi7y6nXsRrDGYXVSCx3EMQ=" alt="Syntagma Square" style="width:300px;height:267px;">
+    <pre style="color:white;">
+        "Constitution Square" is the central square of Athens.
+        The square is named after the Constitution that Otto,
+        the first King of Greece, was obliged to grant after
+        a popular and military uprising on 3 September 1843
+    </pre>
+</div>
+{% endblock %}
