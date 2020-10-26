@@ -43,11 +43,11 @@
 * Andrea Abed
 * Ethan Sun
 ## Credit
-*Wesley- did the main page aswell as the menu page. Organized and put together all the websites.
-*Ethan- created a template for everyone to use for the travel website
-*Andrea- helped with flask and created a travel website
-*Diego- helped organize folders and created a travel website
-*Nawied- Readme and created travel website.
+* Wesley- did the main page aswell as the menu page. Organized and put together all the websites.
+* Ethan- created a template for everyone to use for the travel website
+* Andrea- helped with flask and created a travel website
+* Diego- helped organize folders and created a travel website
+* Nawied- Readme and created travel website.
 ## Meeting Fundamentals Objectives
 ```
 Jinja /
