@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% block head %}
+<title>{{name}} | Venice </title>
+<style>
+ #myBG {
+ background-image: url('//render.fineartamerica.com/images/images-profile-flow/400/images/artworkimages/mediumlarge/3/italy-horizontal-background-panoramic-dolomites-mountains-trentino-alto-adige-bolzano-landscape-luca-lorenzelli.jpg');
+ background-size: 100% 600px;
+ }
+ #box {
+ background-color: darkslategrey;
+  width: 400px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 5px;
+ }
+  </style>
+{% endblock %}
+
+<!-- Project Information  -->
+{% block title %}
+<div id="myBG">
+    <h1>Venice, Italy</h1>
+    <pre style="color:white;"> <!-- Short Description -->
+        One of Italy's most beautiful cities to visit!
+        Filled with tons of canals, detailed architecture, and beautiful
+        architecture of many styles!
+    </pre>
+</div>
+{% endblock %}
+
+{% block hotspot1 %}
+<div id="box">
+    <h2>Hot spots</h2>
+    <hr>
+    <h3>St. Mark's Basilica</h3>
+    <img src="https://www.planetware.com/photos-large/I/italy-venice-st-marks-basilica-and-square-5.jpg" alt="St. Mark's Basilica" style="width:300px;height:197px;">
+    <pre style="color:white;">
+    St. Mark's Basilica, aka
+    the Patriarchal Cathedral
+    Basilica of Saint Mark, is the
+    captures the true essence of
+    italo-byzantine architecture
+    and is considered one of the
+    most important religious
+    buildings in Northern Italy.
+    </pre>
+    <hr>
+</div>
+{% endblock %}
+
+{% block hotspot2 %}
+<div id="box">
+    <hr>
+    <hr>
+    <hr>
+    <h3>Ponte di Rialto</h3>
+    <img src="https://www.bautrip.com/images/what-to-visit/rialto-bridge-venice.jpg" alt="Ponte di Rialto" style="width:300px;height:200px;">
+    <pre style="color:white;">
+    The Ponte di Rialto connects
+    the San Marco and San Polo
+    districts of Venice and is
+    one of the most iconic places
+    to visit in italy, with its
+    beautiful and simple design
+    that compliments the grand
+    canal.
+    </pre>
+    <hr>
+</div>
+{% endblock %}
+
+{% block hotspot3 %}
+<div id="box">
+    <hr>
+    <hr>
+    <hr>
+    <h3>Palazzo Ducale</h3>
+    <img src="https://www.pensioneseguso.com/file/interesse/80/palazzo-ducale-i-tesori-del-doge_1488_2_banner.jpeg" alt="Palazzo Ducale" style="width:300px;height:200px;">
+    <pre style="color:white;">
+    The Palazzo Ducale, aka Doge's
+    Palace,is a palce built in
+    Venetian Gothic style and
+    used to be the home of the
+    Doge, the ruler of Venice.
+    Contains many rooms filled
+    with beautiful ornate
+    ceilings and fireplaces.
+    </pre>
+    <hr>
+</div>
+{% endblock %}
+
+
