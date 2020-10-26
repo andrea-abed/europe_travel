@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home_route():
     return render_template("travel.html", projects=projects.setup())
 
-
+#adds the app routes so we can have seprate sites for each of the locations where we can include information about them
 @app.route("/greece/")
 def greece_route():
     return render_template("greece.html", projects=projects.setup())
@@ -30,6 +30,10 @@ def france_route():
 @app.route("/germany/")
 def germany_route():
     return render_template("germany.html", projects=projects.setup())
+
+@app.route("/england/")
+def england_route():
+    return "<h1 style='background-color:blue;color:white'>England!</h1>"
 
 if __name__ == "__main__":
     #runs the application on the repl development server
