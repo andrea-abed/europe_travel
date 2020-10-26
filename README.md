@@ -20,7 +20,7 @@
 * spain.html-this is the page of our website which provides information about Spain and its hotspots
 
 
-##Directions for Mr.M
+### Directions for Mr.M
 *1.Download/clone all files onto computer
 *2.Run the project on a local server
 *3.After running, you will see our main website. There are 3 catagories, one is our work in progress travel project, one is our old hello series and a link to this readme, and the other is a list of all our documents(journals, project ideas, etc.)
