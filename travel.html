@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <title>Travel</title>
+    <style>
+      h1   {
+      color: lightpink;
+      font-family: Times New Roman;
+      font-size: 800%
+      border: 2px solid lightpink;
+      padding: 50px;
+      margin: 50px;
+      }
+    </style>
+</head>
+<body style="background-color:powderblue;color:white;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Travel Team</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/greece/">Greece</a>
+                <a class="nav-link" href="/italy/">Italy</a>
+                <a class="nav-link" href="/spain/">Spain</a>f
+                <a class="nav-link" href="/france/">France</a>
+                <a class="nav-link" href="/germany/">Germany</a>
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+        </div>
+    </nav>
+    <h1>WELCOME! EXPLORE AND TRAVEL BEAUTIFUL LOCATIONS IN EUROPE!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Europe_1748-1766_en.png" alt="Map of Europe" style="width:800px;height:400px;margin:60px;">
+
+
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="{{ url_for('static', filename='vanta.clouds.min.js') }}"></script>
+    <script>
+
+    VANTA.CLOUDS({
+        el: "body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 800.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        wingSpan: 40.0
+    })
+</script>
+
+</body>
+</html>
